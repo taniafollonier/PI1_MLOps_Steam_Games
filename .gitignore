@@ -1,0 +1,22 @@
+Jupyter/PRUEBAS.ipynb
+PRUEBA2.ipynb
+Data/australian_user_reviews.json
+Data/australian_users_items.json
+Data/output_steam_games.json
+Data/user_reviews.csv
+Data/users_items.csv
+Data/steam_games.csv
+Data/Diccionario de Datos STEAM.xlsx
+Data/users_items.parquet
+Jupyter/users_items.parquet
+Jupyter/users_reviews.parquet
+Jupyter/df_PlayTimeGenre.parquet
+Jupyter/df_RecomendacionJuego.parquet
+Jupyter/df_sentiment_analysis.parquet
+Jupyter/df_UserForGenre.parquet
+Jupyter/df_UsersRecommend.parquet
+Jupyter/df_combinado.parquet
+Jupyter/df_combinado2.parquet
+Jupyter/__pycache__
+__pycache__
+h_venv/
