@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-   :small_orange_diamond: <i><u>STACK TECNOLÓGICO:</u></i> :small_orange_diamond:
+💻 STACK TECNOLÓGICO:
   
  ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
  ![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white)
@@ -21,13 +21,13 @@
 
 
 <p align="center">
-  :small_orange_diamond: <i><u>INTRODUCCIÓN:</u></i> :small_orange_diamond:
+💻 INTRODUCCIÓN:
 </p>
 
 En este proyecto se trabaja sobre la plataforma online de juegos Steam, desarrollando un rol de `Data Engineer` para lograr tener un `MVP (Minimum Viable Product)`. Debe contener una `API` con sus correspondientes endpoints de funciones deployadas en `Render`, con un `Modelo de Machine Learning` que contenga un  análisis de sentimiento con NLP, a partir de los comentarios de los usuarios y un sistema de recomendación de videojuegos para los usuarios de la plataforma.
 
 <p align="center">
-  :small_orange_diamond: <i><u>FUENTES:</u></i> :small_orange_diamond:
+💻 FUENTES:
 </p>
 
 Para desarrollar el proyecto se basa en 3 datasets, almacenados como archivos JSON GZIP:
@@ -41,7 +41,7 @@ Para desarrollar el proyecto se basa en 3 datasets, almacenados como archivos JS
 Los detalles en el [Diccionario de datos](./images/diccionario_games.JPG)
 
 <p align="center">
-  :small_orange_diamond: <i><u>TAREAS DESARROLLADAS:</u></i> :small_orange_diamond:
+💻 TAREAS DESARROLLADAS:
 </p>
 
 Se llevó a cabo un proceso de ETL (Extracción, Transformación y Carga), analizando el tipo de dato de cada columna de los distintos datasets, transformándolos cuando fuera necesario, eliminando duplicados, eliminando columnas con valores nulos, desanidando 2 columnas. También se procedió a eliminar las columnas que no iban a ser de utilidad para el posterior análisis, cración de funciones y endpoints de `API`.
@@ -56,7 +56,7 @@ Se crearon los archivos:
 
 
 <p align="center">
-  :small_orange_diamond: <i><u> CREACIÓN DE API:</u></i> :small_orange_diamond:
+💻 CREACIÓN DE API:
 </p>
 
 El desarrollo de la API se realizó usando el framework `FastAPI`, generando las 5 funciones propuestas para las consultas:
@@ -94,13 +94,15 @@ Para el deploy de la API se seleccionó la plataforma Render que es una nube uni
 
 * Se genera el link donde queda corriendo
 
-Lo antedicho se puede observar en el archivo [main](./main.py)  
+Las funciones para los Endpoints se encuentran en el archivo [main](./main.py)  
+
+Los Endpoints fueron cargados en FastAPI para su posterior deploy
 [FastAPI](http://127.0.0.1:8000/)
 
 <p align="center">
-  :small_orange_diamond: <i><u>DEPLOYMENT:</u></i> :small_orange_diamond:
+💻 DEPLOYMENT:
 </p>
 
 Luego de verificar que la API funciona a nivel local, se procedió a usar Render para que la misma pueda ser consumida desde la web. Dado que el servicio gratuito de Render consta de poca memoria, se optó por un muestreo porcentual de los Dataframes pertinentes.
 
-#Lo antedicho se puede observar en el siguiente link: [Render](https://pi1-mlops-steam-games-tania-follonier.onrender.com)
+Se puede observar en el siguiente link: [Render](https://pi1-mlops-steam-games-tania-follonier.onrender.com)
