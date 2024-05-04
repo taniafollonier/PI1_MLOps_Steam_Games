@@ -103,4 +103,4 @@ Lo antedicho se puede observar en el archivo [main](./main.py)
 
 Luego de verificar que la API funciona a nivel local, se procedió a usar Render para que la misma pueda ser consumida desde la web. Dado que el servicio gratuito de Render consta de poca memoria, se optó por un muestreo porcentual de los Dataframes pertinentes.
 
-#Lo antedicho se puede observar en el siguiente link: [Render](https://pi1-mlops-steam-games.onrender.com)
+#Lo antedicho se puede observar en el siguiente link: [Render](https://pi1-mlops-steam-games-tania-follonier.onrender.com)
