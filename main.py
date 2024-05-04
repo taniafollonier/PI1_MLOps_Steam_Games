@@ -17,8 +17,8 @@ parquet_file_path4 = "Jupyter/df_sentiment_analysis_gzip.parquet"
 parquet_file_path5 = "Jupyter/df_RecomendacionJuego_gzip.parquet"
 
 
-app = FastAPI(title= 'Proyecto Integrador 1',
-              description= 'Machine Learning Operations (MLOps), por Camila Fernández Llaneza',
+app = FastAPI(title= 'Proyecto Integrador 1 HENRY Bootcamp',
+              description= 'Machine Learning Operations (MLOps), By Tania Follonier',
               version= '1.0.1', debug=True)
 
 
