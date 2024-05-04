@@ -17,10 +17,44 @@ parquet_file_path4 = "Jupyter/df_sentiment_analysis_gzip.parquet"
 parquet_file_path5 = "Jupyter/df_RecomendacionJuego_gzip.parquet"
 
 
-app = FastAPI(title= 'Proyecto Integrador 1 HENRY Bootcamp',
-              description= 'Machine Learning Operations (MLOps), By Tania Follonier',
-              version= '1.0.1', debug=True)
+app = FastAPI()
 
+@app.get("/", response_class=HTMLResponse, include_in_schema=False)
+def read_root():
+    message = """
+        <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        .custom-text {
+            color: #333333;  /* Gris oscuro */
+            font-family: 'Roboto', sans-serif;  /* Utiliza la fuente Roboto o la que hayas elegido */
+        }
+    </style>
+    <div style="text-align: center; font-size: 24px; margin-bottom: 20px;" class="custom-text">
+        "Hola": "¡Bienvenido a mi Proyecto de MLOPS en Henry!"
+    </div>
+    <div style="text-align: center; font-size: 18px; margin-bottom: 40px;" class="custom-text">
+         "Te invito a": "Proyecto FastAPI - Sistema de Recomendaciones STEAM GAMES."(MVP)
+    </div>
+    <div style="text-align: center; font-size: 18px; margin-bottom: 20px;" class="custom-text">
+        "DataScientist": "Tania Follonier",
+    </div>
+    <div style="text-align: center; font-size: 18px; margin-bottom: 20px;" class="custom-text">
+        "Mensaje": "Proyecto Individual N° 1"
+    </div>    
+    <div style="text-align: center;">
+        <form action='/redirect' style="display: inline-block;">
+            <input type='submit' value='Ingrese a la API' style="font-size: 16px; background-color: orange; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+        </form>
+    </div>
+    """
+    return HTMLResponse(content=message)
+
+@app.get("/redirect", include_in_schema=False)
+def redirect_to_docs():
+    link = "https://pi1-mlops-steam-games-tania-follonier.onrender.com/docs"
+    raise HTTPException(status_code=302, detail="Redirecting", headers={"Location": link})
 
 
 
